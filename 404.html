@@ -1,23 +1,32 @@
 <!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='6' width='24' height='20' rx='3' fill='none' stroke='%2318181a' stroke-width='2.5'/%3E%3Cpath d='M4 12h24' stroke='%2318181a' stroke-width='2.5'/%3E%3C/svg%3E">
-  <meta name="robots" content="noindex, nofollow">
-  <title>Página no encontrada · Maquetas de webs para concesionarios</title>
-  <!-- GitHub Pages sirve esta página para cualquier ruta que no existe, a cualquier profundidad:
-       por eso los enlaces y el estilo usan la ruta completa, que publicar.sh rellena. -->
-  <link rel="stylesheet" href="/maquetas/estilos.css">
-</head>
-<body data-portada>
-  <main class="envoltorio legal">
-    <header class="cabecera">
-      <p class="antetitulo">Error 404</p>
-      <h1>Esta página no existe en las maquetas</h1>
-      <p class="entrada">Puede que el enlace esté mal escrito o que la página no forme parte de la maqueta.</p>
-      <p><a href="/maquetas/">Volver a las maquetas</a></p>
-    </header>
-  </main>
-</body>
-</html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Doyouwin · Maquetas privadas</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;font:16px/1.6 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#e9edf3;background:radial-gradient(120% 90% at 85% 0%,#1b3a6b 0%,transparent 55%),linear-gradient(165deg,#0b1830,#060d1b)}
+main{max-width:520px}
+.marca{font-weight:800;letter-spacing:.18em;font-size:14px;color:#8fb4ff;margin-bottom:22px}
+h1{font-size:clamp(30px,6vw,44px);line-height:1.08;margin:0 0 10px}
+.sub{color:#b8c3d4;margin:0 0 22px}
+.aviso{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:16px 20px;margin-bottom:20px}
+.aviso h2{font-size:13px;margin:0 0 8px;text-transform:uppercase;letter-spacing:.14em;color:#8fb4ff}
+.aviso ul{margin:0;padding-left:20px}.aviso li{margin:6px 0}
+.pie{color:#8d99ab;font-size:13px;margin-top:22px}
+</style>
+<script>
+(function(){
+  // Si alguien entra directamente a una página interna de una maqueta, lo llevamos a su pantalla de acceso.
+  var m=location.pathname.match(/^\/maquetas\/(grupo-sala|nextycar|carhaus)\/(.*)$/);
+  if(m&&m[2]!=='acceso.html'&&m[2]!=='aviso-legal.html'){
+    location.replace('/maquetas/'+m[1]+'/acceso.html?volver='+encodeURIComponent(location.pathname+location.search+location.hash));
+  }
+})();
+</script></head>
+<body><main>
+<div class="marca">DOYOUWIN</div>
+<h1>Página no encontrada</h1>
+<p class="sub">Esta dirección no existe. Si buscas una maqueta, usa el enlace personal que te enviamos por correo.</p>
+<p class="pie">© 2026 Doyouwin</p>
+</main></body></html>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#fbbe0a">
+<title>Acceso a la maqueta · Carhaus</title>
+<link rel="icon" href="/maquetas/carhaus/acceso/marca.svg">
+<style>
+@font-face{font-family:'Rubik';src:url(/maquetas/carhaus/acceso/titulo.woff2) format('woff2');font-weight:300 900;font-display:swap}
+:root{--amarillo:#fbbe0a;--negro:#000;--asfalto:#1e1e1e;--tinta:#3c3524;--niebla:#f5f7fa;--linea:#e3e6ec;--azul:#096afc;--rojo:#c62d32;--f:'Rubik',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:400 16px/1.6 var(--f);color:var(--tinta);background:var(--niebla)}
+a{color:inherit}.ico{flex:none}
+.logo-dyw{display:block;height:auto;--logo-texto:#000;--logo-acento:#000}
+h1,h2,h3{font-family:var(--f);color:var(--negro);margin:0}
+:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+.escena{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);min-height:100vh;min-height:100dvh;align-items:start}
+.portada{position:sticky;top:0;height:100vh;height:100dvh;overflow:hidden;background:var(--amarillo);color:var(--negro);padding:clamp(24px,4vw,44px) clamp(24px,5vw,68px);display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.portada>*{position:relative;z-index:1}
+.portada>.aro{position:absolute;z-index:0;right:-26%;bottom:-30%;width:78%;max-width:640px}
+.portada .logo-dyw{width:132px}
+.etiqueta{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:var(--negro);color:var(--amarillo);font:600 12.5px/1 var(--f);letter-spacing:.08em;text-transform:uppercase;margin:0 0 20px}
+h1{font:800 clamp(38px,5.2vw,70px)/1 var(--f);letter-spacing:-.035em;margin:0 0 20px;text-wrap:balance}
+h1 em{font-style:normal;background:var(--negro);color:var(--amarillo);padding:.02em .16em .06em;border-radius:.14em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.lead{font-size:clamp(16px,1.5vw,19px);line-height:1.5;max-width:30em;margin:0;color:var(--tinta);font-weight:500}
+.finalidad{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;padding:18px 20px;margin-top:26px;max-width:35em;border-radius:22px;background:var(--negro);color:#fff;box-shadow:0 24px 40px -26px rgba(0,0,0,.6)}
+.finalidad .ic{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--amarillo);color:var(--negro)}
+.finalidad h3{margin:2px 0 5px;font:700 13px/1.2 var(--f);letter-spacing:.1em;text-transform:uppercase;color:var(--amarillo)}
+.finalidad p{margin:0;font-size:14.5px;line-height:1.55;color:rgba(255,255,255,.9)}
+.lema{margin:0;font:700 15px/1.2 var(--f);letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.lema::before{content:'';width:26px;height:4px;border-radius:2px;background:var(--negro)}
+.acceso{align-self:stretch;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px clamp(16px,4vw,56px);background:var(--niebla)}
+.tarjeta{width:min(520px,100%);background:#fff;border:1px solid var(--linea);border-radius:28px;padding:clamp(22px,3vw,34px);box-shadow:0 30px 60px -38px rgba(0,0,0,.35)}
+.sello{display:inline-flex;align-items:center;gap:8px;padding:6px 13px 6px 10px;border-radius:999px;background:var(--amarillo);color:var(--negro);font:700 12px/1 var(--f);letter-spacing:.1em;text-transform:uppercase}
+h2{font:800 clamp(23px,2.5vw,30px)/1.1 var(--f);letter-spacing:-.025em;margin:14px 0 18px}
+.puntos{list-style:none;margin:0 0 6px;padding:0;display:grid;gap:13px}
+.puntos li{display:grid;grid-template-columns:40px 1fr;gap:13px;align-items:start}
+.puntos .ic{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--negro);color:var(--amarillo)}
+.puntos h3{font:700 15px/1.25 var(--f);margin:1px 0 2px}
+.puntos p{margin:0;font-size:14px;line-height:1.5;color:var(--tinta)}
+.puntos strong{color:var(--negro)}
+.enlace{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:14.5px;color:var(--negro);margin:10px 0 0;text-decoration:underline;text-decoration-color:var(--amarillo);text-decoration-thickness:3px;text-underline-offset:4px}
+form{margin-top:22px;padding-top:22px;border-top:1px dashed #cfd5de}
+.chk{display:grid;grid-template-columns:26px 1fr;gap:12px;align-items:start;cursor:pointer;font-size:14.5px;line-height:1.45}
+.chk input{position:absolute;opacity:0;width:26px;height:26px;margin:0}
+.chk .caja{width:26px;height:26px;border-radius:8px;border:2px solid #9aa3b0;display:grid;place-items:center;background:#fff;transition:background .15s,border-color .15s}
+.chk .caja svg{opacity:0;transform:scale(.6);transition:.15s;color:var(--amarillo)}
+.chk input:checked+.caja{background:var(--negro);border-color:var(--negro)}
+.chk input:checked+.caja svg{opacity:1;transform:none}
+.chk input:focus-visible+.caja{outline:3px solid var(--azul);outline-offset:3px}
+.cod{display:block;font:700 12.5px/1 var(--f);letter-spacing:.1em;text-transform:uppercase;margin:20px 0 8px;color:var(--negro)}
+input[type=text]{width:100%;font:700 clamp(18px,2.2vw,22px)/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.1em;text-transform:uppercase;text-align:center;padding:17px 14px;border:2px solid var(--linea);border-radius:16px;background:var(--niebla);color:var(--negro);transition:border-color .15s,background .15s,box-shadow .15s}
+input[type=text]::placeholder{color:#a3abb7;letter-spacing:.08em;font-weight:500}
+input[type=text]:focus{outline:none;border-color:var(--negro);background:#fff;box-shadow:0 0 0 5px var(--amarillo)}
+.err{min-height:1.5em;margin:10px 0 0;font-size:14px;font-weight:600;color:var(--rojo)}
+.err.ok{color:var(--tinta);font-weight:500}
+button{margin-top:10px;width:100%;display:flex;align-items:center;justify-content:center;gap:10px;font:700 17px/1 var(--f);padding:18px;border:0;border-radius:999px;background:var(--negro);color:#fff;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+button svg{color:var(--amarillo)}
+button:hover:not(:disabled){background:var(--asfalto);transform:translateY(-2px);box-shadow:0 16px 26px -16px rgba(0,0,0,.7)}
+button:disabled{opacity:.32;cursor:not-allowed}
+button.carga svg{display:none}
+button.carga::after{content:'';width:18px;height:18px;border-radius:50%;border:3px solid var(--amarillo);border-right-color:transparent;animation:gira .7s linear infinite}
+@keyframes gira{to{transform:rotate(360deg)}}
+.pie{margin:18px 4px 0;font-size:12.5px;color:#6b7280;text-align:center}
+@media(prefers-reduced-motion:no-preference){
+.tarjeta,.portada .titular{animation:entra .7s cubic-bezier(.2,.7,.2,1) both}
+.tarjeta{animation-delay:.12s}
+@keyframes entra{from{opacity:0;transform:translateY(14px)}}
+.aro{animation:gira-aro 60s linear infinite}
+@keyframes gira-aro{to{transform:rotate(360deg)}}
+}
+@media(max-height:760px) and (min-width:901px){.finalidad{margin-top:18px}.lead{display:none}}
+@media(max-width:900px){
+.escena{grid-template-columns:1fr}
+.portada{position:relative;height:auto;padding:22px 20px 56px;gap:22px}
+.portada>.aro{width:92%;right:-34%;bottom:-40%}
+.lema{display:none}
+.acceso{min-height:0;padding:0 14px 36px;margin-top:-30px;align-self:auto}
+}
+.doc{min-height:100vh}
+.doc .banda{position:relative;overflow:hidden;background:var(--amarillo);color:var(--negro);padding:clamp(22px,3vw,32px) clamp(20px,6vw,80px) 76px}
+.doc .banda>*{position:relative;z-index:1}
+.doc .banda>.aro{position:absolute;z-index:0;right:-9%;top:-34%;width:min(560px,70%)}
+.doc .barra{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:clamp(40px,7vw,84px)}
+.doc .barra .logo-dyw{width:128px}
+.doc .volver{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14.5px;text-decoration:none;padding:11px 18px;border-radius:999px;background:var(--negro);color:#fff}
+.doc .volver svg{color:var(--amarillo)}
+.doc .volver:hover{background:var(--asfalto)}
+.doc h1{font-size:clamp(46px,8vw,104px);margin-bottom:14px}
+.doc .fecha{display:inline-block;margin:0;font:600 13px/1.3 var(--f);letter-spacing:.06em;text-transform:uppercase;padding:9px 14px;border-radius:999px;background:rgba(0,0,0,.1)}
+.doc .claves{max-width:1060px;margin:-38px auto 0;padding:0 clamp(16px,4vw,32px);display:grid;grid-template-columns:repeat(4,1fr);gap:12px;position:relative}
+.doc .clave{background:#fff;border:1px solid var(--linea);border-radius:22px;padding:18px;box-shadow:0 24px 40px -30px rgba(0,0,0,.45)}
+.doc .clave .ic{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--negro);color:var(--amarillo);margin-bottom:12px}
+.doc .clave b{display:block;font:700 15px/1.25 var(--f);color:var(--negro);margin-bottom:3px}
+.doc .clave span{font-size:13.5px;line-height:1.45}
+.doc .clave .ic{display:grid}
+.doc .cuerpo{max-width:1060px;margin:0 auto;padding:44px clamp(16px,4vw,32px) 24px}
+.doc .finalidad{max-width:none;margin:0 0 22px}
+.doc section{display:grid;grid-template-columns:96px minmax(0,1fr);gap:8px 26px;padding:28px 0;border-top:1px solid var(--linea)}
+.doc .num{font:800 58px/.9 var(--f);letter-spacing:-.04em;color:var(--negro);position:relative;align-self:start;padding-bottom:12px}
+.doc .num::after{content:'';position:absolute;left:0;bottom:0;width:44px;height:6px;border-radius:3px;background:var(--amarillo)}
+.doc h2{margin:0 0 8px;font-size:clamp(21px,2.3vw,28px)}
+.doc section p{margin:0 0 8px;max-width:46em}
+.doc section strong{color:var(--negro)}
+.doc .fin{background:var(--negro);color:rgba(255,255,255,.8);margin-top:24px;padding:26px clamp(20px,6vw,80px);font-size:13.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.doc .fin b{color:var(--amarillo);font-weight:700}
+@media(max-width:860px){
+.doc .claves{grid-template-columns:repeat(2,1fr)}
+.doc section{grid-template-columns:1fr;gap:4px}
+.doc .num{font-size:42px}
+}
+</style></head>
+<body><div class="escena">
+<section class="portada">
+<svg class="aro" viewBox="0 0 600 600" aria-hidden="true" fill="none"><circle cx="300" cy="300" r="230" stroke="#000" stroke-width="120"/><circle cx="300" cy="300" r="230" stroke="#fbbe0a" stroke-width="120" pathLength="100" stroke-dasharray="21 79" transform="rotate(-50 300 300)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="logo-dyw" role="img" aria-label="Doyouwin" viewBox="0 0 175.915 83.48"><g><g><g fill="var(--logo-texto, #333)"><path d="M.824 52.672A.79.79 0 0 1 0 51.849v-21.39a.79.79 0 0 1 .823-.825h8.555a13.2 13.2 0 0 1 5.5 1.037 7.74 7.74 0 0 1 3.488 3.027 9.94 9.94 0 0 1 1.316 4.919q.033 1.448.033 2.534t-.033 2.5a10.9 10.9 0 0 1-1.3 5.068 7.1 7.1 0 0 1-3.39 2.978 13.6 13.6 0 0 1-5.445.97zm5.067-4.738h3.488a5.5 5.5 0 0 0 2.353-.444 2.97 2.97 0 0 0 1.415-1.4 5.9 5.9 0 0 0 .51-2.5q.064-.955.082-1.711t0-1.513q-.017-.757-.082-1.68a4.5 4.5 0 0 0-1.17-3.273 4.62 4.62 0 0 0-3.273-1.037H5.89Z"/><path d="M31.295 53a10.9 10.9 0 0 1-4.657-.89 6.5 6.5 0 0 1-2.9-2.55 8.5 8.5 0 0 1-1.135-3.964q-.033-.66-.033-1.5 0-.841.033-1.464a8.1 8.1 0 0 1 1.189-3.981 6.87 6.87 0 0 1 2.945-2.533 10.65 10.65 0 0 1 4.558-.89 10.7 10.7 0 0 1 4.59.89 6.87 6.87 0 0 1 2.945 2.533 8.1 8.1 0 0 1 1.184 3.982q.033.625.033 1.464t-.033 1.5a8.5 8.5 0 0 1-1.135 3.965 6.52 6.52 0 0 1-2.9 2.55 11 11 0 0 1-4.684.888m0-4.015a2.53 2.53 0 0 0 2.155-.89 4.84 4.84 0 0 0 .774-2.665q.032-.494.033-1.316 0-.822-.033-1.316a4.87 4.87 0 0 0-.774-2.65 3 3 0 0 0-4.295 0 4.6 4.6 0 0 0-.756 2.65q-.033.494-.033 1.316t.033 1.316a4.6 4.6 0 0 0 .756 2.666 2.54 2.54 0 0 0 2.14.889"/><path d="M45.704 58.924a.676.676 0 0 1-.691-.691 1 1 0 0 1 .017-.181.8.8 0 0 1 .082-.247l2.566-6.187-6.318-14.94a1 1 0 0 1-.1-.395 1.1 1.1 0 0 1 .263-.51.65.65 0 0 1 .494-.213h3.752a.87.87 0 0 1 .642.214 1.03 1.03 0 0 1 .279.477l3.784 9.576 3.85-9.576a1.8 1.8 0 0 1 .345-.477.87.87 0 0 1 .642-.214h3.693a.7.7 0 0 1 .51.214.66.66 0 0 1 .214.477 1.3 1.3 0 0 1-.1.427l-9.313 21.555a1.26 1.26 0 0 1-.33.477.93.93 0 0 1-.657.214z"/><path d="M69.598 53a10.9 10.9 0 0 1-4.657-.89 6.5 6.5 0 0 1-2.9-2.55 8.5 8.5 0 0 1-1.135-3.964q-.033-.66-.033-1.5 0-.841.033-1.464a8.1 8.1 0 0 1 1.184-3.982 6.87 6.87 0 0 1 2.945-2.533 12.2 12.2 0 0 1 9.148 0 6.87 6.87 0 0 1 2.945 2.533 8.1 8.1 0 0 1 1.184 3.982q.033.625.033 1.464t-.033 1.5a8.5 8.5 0 0 1-1.135 3.965 6.53 6.53 0 0 1-2.9 2.55 11 11 0 0 1-4.68.889m0-4.015a2.53 2.53 0 0 0 2.155-.89 4.84 4.84 0 0 0 .774-2.665q.032-.494.033-1.316 0-.822-.033-1.316a4.87 4.87 0 0 0-.774-2.65 3 3 0 0 0-4.294 0 4.6 4.6 0 0 0-.756 2.65q-.033.494-.033 1.316t.033 1.316a4.6 4.6 0 0 0 .756 2.666 2.54 2.54 0 0 0 2.139.889"/><path d="M87.86 53.005a6.5 6.5 0 0 1-3.34-.856 5.8 5.8 0 0 1-2.287-2.517 9.1 9.1 0 0 1-.823-4.064v-9.185a.79.79 0 0 1 .823-.823h4.113a.79.79 0 0 1 .823.823v8.983q0 3.226 2.9 3.225a2.85 2.85 0 0 0 2.156-.84 3.3 3.3 0 0 0 .806-2.385v-8.983a.79.79 0 0 1 .823-.823h4.113a.79.79 0 0 1 .823.823v15.466a.79.79 0 0 1-.823.823H94.15a.82.82 0 0 1-.576-.231.77.77 0 0 1-.247-.592v-1.251a5.4 5.4 0 0 1-2.222 1.793 7.9 7.9 0 0 1-3.245.614"/></g><g fill="var(--logo-acento, #fbbe0a)"><path d="M109.968 52.672a1.2 1.2 0 0 1-.89-.33 1.34 1.34 0 0 1-.394-.756l-3.587-21.027a.3.3 0 0 1-.033-.132v-.1a.735.735 0 0 1 .692-.691h4.08q.92 0 1.02.723l2.139 12.867 2.369-7.6a2.4 2.4 0 0 1 .329-.576.88.88 0 0 1 .756-.312h2.37a.92.92 0 0 1 .79.312 1.7 1.7 0 0 1 .3.576l2.37 7.568 2.139-12.834q.1-.722 1.02-.723h4.08a.65.65 0 0 1 .494.213.7.7 0 0 1 .2.478v.23l-3.586 21.027a1.34 1.34 0 0 1-.4.757 1.2 1.2 0 0 1-.89.329h-3.13a1.16 1.16 0 0 1-.856-.3 1.65 1.65 0 0 1-.4-.56l-3.323-9.411-3.324 9.41a1.7 1.7 0 0 1-.38.56 1.1 1.1 0 0 1-.838.3z"/><path d="M134.417 52.672a.79.79 0 0 1-.823-.823v-21.39a.79.79 0 0 1 .823-.822h4.41a.79.79 0 0 1 .822.822v21.39a.79.79 0 0 1-.822.823z"/><path d="M145.078 52.672a.79.79 0 0 1-.823-.823v-21.39a.79.79 0 0 1 .823-.822h3.488a1.1 1.1 0 0 1 .806.247 1.8 1.8 0 0 1 .313.379l8.029 12.67V30.46a.79.79 0 0 1 .823-.822h3.952a.79.79 0 0 1 .822.822v21.39a.82.82 0 0 1-.231.576.77.77 0 0 1-.592.247h-3.521a1.01 1.01 0 0 1-.774-.264 4 4 0 0 1-.313-.362l-8.031-12.176v11.979a.79.79 0 0 1-.823.823z"/></g><path fill="var(--logo-acento, #fbbe0a)" d="M174.843 32.326a41.73 41.73 0 0 0-81.313 0h5.013a36.883 36.883 0 1 1 1.394 23.034h-5.2a41.73 41.73 0 0 0 80.1-23.035z"/></g></g></svg>
+<div class="titular">
+<p class="etiqueta">Maqueta privada · Propuesta de rediseño</p>
+<h1>Así podría ser la nueva web de <em>Carhaus</em></h1>
+<p class="lead">Hemos preparado una maqueta de demostración para que la veas antes de que exista. Entra con el código que te enviamos por correo.</p>
+<div class="finalidad"><span class="ic"><svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></span><div><h3>Finalidad de esta maqueta</h3><p>Enseñarte cómo podría ser la nueva web de Carhaus para que valores el diseño, la navegación y los contenidos y nos des tu opinión antes de desarrollarla. Navega con libertad: nada de lo que hagas aquí se envía ni se guarda.</p></div></div>
+</div>
+<p class="lema">Hacemos que suceda</p>
+</section>
+<section class="acceso"><div class="tarjeta">
+<span class="sello"><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6h.01"/></svg> Aviso legal</span>
+<h2>Antes de entrar, ten en cuenta</h2>
+<ul class="puntos"><li><span class="ic"><svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6h.01"/></svg></span><div><h3>No es la web oficial</h3><p>Es un prototipo de demostración de Doyouwin. La web oficial de Carhaus es <strong>carhaus.es</strong>.</p></div></li><li><span class="ic"><svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12.5V4.5h8l9 9-8 8z"/><circle cx="7.8" cy="8.8" r="1.1"/></svg></span><div><h3>Datos de ejemplo</h3><p>Coches, precios y ofertas son una copia del 23-10-2026, sin valor comercial. Los formularios no envían nada.</p></div></li><li><span class="ic"><svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.8 9.4a3.6 3.6 0 1 0 0 5.2"/></svg></span><div><h3>Marcas de terceros</h3><p>Logotipos, textos y fotografías pertenecen a sus titulares y se muestran solo para enseñarte la propuesta.</p></div></li><li><span class="ic"><svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9.5" rx="2.2"/><path d="M8.2 11V8a3.8 3.8 0 0 1 7.6 0v3"/></svg></span><div><h3>Acceso privado</h3><p>Diseño y código © 2026 Doyouwin. Uso exclusivo de Carhaus: no se puede copiar ni compartir.</p></div></li></ul>
+<a class="enlace" href="/maquetas/carhaus/aviso-legal.html">Leer el aviso legal completo <svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<form id="f" novalidate>
+<label class="chk"><input type="checkbox" id="ok"><span class="caja"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>He leído el aviso legal y entiendo que esto es una maqueta de demostración y <strong>no la web oficial</strong> de Carhaus.</span></label>
+<label class="cod" for="cod">Código de acceso</label>
+<input type="text" id="cod" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="CARH-XXXX-XXXX-XXXX" aria-describedby="err">
+<p class="err" id="err" role="alert"></p>
+<button type="submit" id="go" disabled><span>Acceder a la maqueta</span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+</form>
+<p class="pie">© 2026 Doyouwin · Todos los derechos reservados</p>
+</div></section>
+</div>
+<script>
+(function(){
+var BASE="/maquetas/carhaus/",SAL="a71a18ebf8a1b38bf810055794c422d6",ITER=600000,DB="doyouwin-maqueta-carhaus";
+var ok=document.getElementById('ok'),cod=document.getElementById('cod'),go=document.getElementById('go'),err=document.getElementById('err');
+function pinta(){go.disabled=!(ok.checked&&cod.value.replace(/[^A-Za-z0-9]/g,'').length>0)}
+function msg(t,suave){err.textContent=t;err.className='err'+(suave?' ok':'')}
+ok.onchange=cod.oninput=pinta;
+function hex(h){var a=new Uint8Array(h.length/2);for(var i=0;i<a.length;i++)a[i]=parseInt(h.substr(i*2,2),16);return a}
+function idbPon(rec){return new Promise(function(res,rej){var r=indexedDB.open(DB,1);r.onupgradeneeded=function(){r.result.createObjectStore('k')};
+r.onerror=function(){rej(r.error)};r.onsuccess=function(){var t=r.result.transaction('k','readwrite');t.objectStore('k').put(rec,'acceso');t.oncomplete=function(){res()};t.onerror=function(){rej(t.error)}}})}
+async function entrar(codigo){
+  var enc=new TextEncoder(),km=await crypto.subtle.importKey('raw',enc.encode(codigo),'PBKDF2',false,['deriveKey']);
+  var key=await crypto.subtle.deriveKey({name:'PBKDF2',hash:'SHA-256',salt:hex(SAL),iterations:ITER},km,{name:'AES-GCM',length:256},false,['decrypt']);
+  var r=await fetch(BASE+'_c/manifest.bin',{cache:'no-cache'});if(!r.ok)throw new Error('red');
+  var b=new Uint8Array(await r.arrayBuffer());
+  try{await crypto.subtle.decrypt({name:'AES-GCM',iv:b.slice(0,12)},key,b.slice(12))}catch(e){return false}
+  await idbPon({key:key,ts:Date.now()});
+  var reg=await navigator.serviceWorker.register(BASE+'sw.js',{scope:BASE});
+  await navigator.serviceWorker.ready;
+  var a=navigator.serviceWorker.controller||reg.active;if(a)a.postMessage('reiniciar');
+  var v=new URLSearchParams(location.search).get('volver');
+  location.replace(v&&v.indexOf(BASE)===0?v:BASE);
+  return true;
+}
+document.getElementById('f').onsubmit=async function(e){
+  e.preventDefault();
+  if(!ok.checked){msg('Marca la casilla para confirmar que has leído el aviso legal.');return}
+  if(!window.crypto||!crypto.subtle||!('serviceWorker' in navigator)){msg('Este navegador (o la ventana privada) no permite abrir la maqueta. Prueba con una ventana normal de Chrome, Safari, Edge o Firefox.');return}
+  var c=cod.value.toUpperCase().replace(/[^A-Z0-9]/g,'');
+  go.disabled=true;go.classList.add('carga');msg('Comprobando el código…',true);
+  try{var bien=await entrar(c);if(!bien){msg('El código no es correcto. Revísalo e inténtalo de nuevo.');cod.select()}else{msg('Código correcto. Abriendo la maqueta…',true);return}}
+  catch(x){msg('No se pudo abrir la maqueta. Comprueba tu conexión e inténtalo de nuevo.')}
+  go.classList.remove('carga');pinta();
+};
+})();
+</script></body></html>
