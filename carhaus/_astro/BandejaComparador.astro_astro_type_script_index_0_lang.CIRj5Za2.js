@@ -1,0 +1,8 @@
+import{i as e,n as t,o as n,s as r,t as i}from"./listas.C1xCH1Hm.js";var a=document.getElementById(`bandeja`),o=a.querySelector(`[data-huecos]`),s=document.getElementById(`hueco-vacio`),c=a.querySelector(`[data-cuerpo]`),l=location.pathname.startsWith(`/maquetas/carhaus/comparador`),u=()=>{let r=n(`comparar`);a.hidden=r.length===0||l,a.querySelector(`[data-n]`).textContent=`(${r.length}/3)`,a.querySelector(`[data-ir]`).classList.toggle(`pointer-events-none`,r.length<2),a.querySelector(`[data-ir]`).classList.toggle(`opacity-50`,r.length<2),o.replaceChildren(...Array.from({length:3},(n,i)=>{let a=r[i];if(!a)return s.content.firstElementChild.cloneNode(!0);let o=e(a),c=document.createElement(`li`);return c.className=`relative`,c.innerHTML=`
+          <a href="/maquetas/carhaus/vehiculo/${a}/" class="block">
+            <img src="${o?.foto??``}" alt="" class="aspect-[4/3] w-full bg-panel object-cover" loading="lazy" />
+            <span class="mt-1 block truncate text-[0.72rem] font-bold text-azul"></span>
+          </a>
+          <button type="button" class="absolute top-1 right-1 grid size-6 place-items-center rounded-full bg-white/95 text-azul shadow" aria-label="Quitar">
+            <svg viewBox="0 0 24 24" class="size-3.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>`,c.querySelector(`span`).textContent=o?.nombre??a,c.querySelector(`button`).addEventListener(`click`,()=>t(`comparar`,a)),c}))};u(),i(u),a.querySelector(`[data-plegar]`).addEventListener(`click`,()=>{c.hidden=a.toggleAttribute(`data-plegada`)}),a.querySelector(`[data-vaciar]`).addEventListener(`click`,()=>r(`comparar`));

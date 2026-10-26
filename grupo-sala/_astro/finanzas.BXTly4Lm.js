@@ -1,0 +1,1 @@
+var e=8.99,t=[24,36,48,60,72,84,96];function n(t,n,r=e){if(t<=0)return 0;let i=r/100/12;return t*i/(1-(1+i)**+-n)}var r=e=>Math.round(n(e,96));export{n as i,e as n,r,t};

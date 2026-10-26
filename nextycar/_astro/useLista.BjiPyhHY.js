@@ -1,0 +1,1 @@
+import{t as e}from"./react.CvnImTBr.js";import{i as t,t as n}from"./listas.BI5wol6R.js";var r=e();function i(e){let[i,a]=(0,r.useState)([]);return(0,r.useEffect)(()=>{let r=()=>a(t(e));return r(),n(r)},[e]),i}export{i as t};

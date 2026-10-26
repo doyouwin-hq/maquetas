@@ -1,0 +1,1 @@
+var e={SUV:`todoterreno`,Compacto:`compacto`,Berlina:`sedan`,Familiar:`familiar`,Monovolumen:`monovolumen`,Furgoneta:`furgoneta`,Camper:`combi`},t=t=>e[t]?`/maquetas/carhaus/img/carrocerias/${e[t]}.webp`:void 0;export{t as n,e as t};

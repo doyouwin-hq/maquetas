@@ -1,0 +1,84 @@
+/* Portada neutra: no toma el estilo de ningún cliente ni el de Doyouwin. Sin fuentes externas. */
+:root {
+  --papel: #f5f4f0;
+  --blanco: #ffffff;
+  --tinta: #18181a;
+  --suave: #5f5e5a;
+  --linea: #dddbd3;
+  --foco: #2b59c3;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font: 400 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+a:focus-visible { outline: 2px solid var(--foco); outline-offset: 3px; border-radius: 4px; }
+.envoltorio { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+.cabecera { padding: 72px 0 40px; }
+.antetitulo { margin: 0 0 18px; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--suave); }
+h1 {
+  margin: 0;
+  max-width: 17ch;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(36px, 5.4vw, 64px);
+  line-height: 1.04;
+  letter-spacing: -.015em;
+}
+.entrada { max-width: 60ch; margin: 22px 0 0; font-size: 18px; color: var(--suave); }
+
+.webs { display: grid; gap: 28px; grid-template-columns: repeat(3, minmax(0, 1fr)); padding-bottom: 56px; }
+.web {
+  display: flex; flex-direction: column;
+  background: var(--blanco); border: 1px solid var(--linea); border-radius: 14px;
+  text-decoration: none; overflow: hidden;
+  transition: border-color .2s ease;
+}
+.web:hover { border-color: #b9b7ae; }
+.web:hover .abrir span { transform: translateX(4px); }
+.vista { position: relative; aspect-ratio: 16 / 11; background: #e9e7e0; overflow: hidden; border-bottom: 1px solid var(--linea); }
+.vista .escritorio { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.vista .movil {
+  position: absolute; right: 16px; bottom: -48px; width: 24%; height: auto;
+  border-radius: 12px; border: 3px solid var(--tinta); background: var(--tinta);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .22);
+}
+.datos { display: flex; flex-direction: column; gap: 6px; padding: 22px 22px 24px; flex: 1; }
+.web h2 { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -.01em; }
+.web p { margin: 0; color: var(--suave); }
+.abrir { margin-top: auto; padding-top: 16px; font-weight: 600; }
+.abrir span { display: inline-block; transition: transform .2s ease; }
+
+.nota {
+  margin: 0 0 56px; padding: 18px 20px; border-left: 3px solid var(--tinta);
+  background: var(--blanco); font-size: 15px; color: var(--suave); max-width: 80ch;
+}
+.nota strong { color: var(--tinta); }
+
+.pie { border-top: 1px solid var(--linea); padding: 22px 0 36px; font-size: 13px; color: var(--suave); }
+.pie .envoltorio { display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: space-between; }
+
+/* Aviso legal */
+.legal { max-width: 74ch; padding-bottom: 56px; }
+.legal h1 { font-size: clamp(32px, 4.4vw, 48px); max-width: none; }
+.legal h2 { margin: 36px 0 8px; font-size: 18px; }
+.legal p, .legal li { color: #3a3936; }
+.legal .volver { display: inline-block; margin-bottom: 28px; font-size: 14px; }
+
+@media (max-width: 960px) {
+  .webs { grid-template-columns: 1fr; max-width: 560px; }
+  .cabecera { padding: 48px 0 32px; }
+}
+@media (max-width: 480px) {
+  .envoltorio { padding: 0 16px; }
+  .entrada { font-size: 17px; }
+  .datos { padding: 18px 18px 20px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
